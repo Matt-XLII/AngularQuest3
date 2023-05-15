@@ -2,8 +2,8 @@
 <img [src]="user.photo" alt="avatar">
 <h2>Nom : {{user.name}}</h2>
 <h2>Prénom : {{user.firstname}}</h2>
-<h2 id="userAge">Age : {{user.age}}</h2>
+<h2 [hidden]="user.isAgeHidden" id="userAge">Age : {{user.age}}</h2>
 <p>{{user.quote}}</p>
 <input type="text" [(ngModel)]="user.quote">
 </div>
-<button (click)="hide()">Afficher / Masquer mon age</button>
+<button (click)="user.hideAge()">Afficher / Masquer mon age</button>

@@ -10,9 +10,4 @@ export class UserProfileComponent {
 
 user = new user("John", "Doe", 25, '', 'https://randomuser.me/api/portraits/lego/2.jpg' )
 
-hide = function(){
-  let userAge:any = document.getElementById("userAge")
-  userAge.classList.toggle("hidden");
-}
-
 }
