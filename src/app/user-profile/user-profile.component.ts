@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { user } from './user'
 
 @Component({
   selector: 'app-user-profile',
@@ -7,13 +8,7 @@ import { Component } from '@angular/core';
 })
 export class UserProfileComponent {
 
-user = {
-  name: 'Doe',
-  firstname: 'John',
-  age: 25,
-  quote: '',
-  photo: 'https://randomuser.me/api/portraits/lego/2.jpg'
-}
+user = new user("John", "Doe", 25, '', 'https://randomuser.me/api/portraits/lego/2.jpg' )
 
 hide = function(){
   let userAge:any = document.getElementById("userAge")
