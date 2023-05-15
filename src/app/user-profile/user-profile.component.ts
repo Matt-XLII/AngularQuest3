@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class UserProfileComponent {
 
- 
 user = {
   name: 'Doe',
   firstname: 'John',
